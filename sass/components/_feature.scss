@@ -1,0 +1,31 @@
+.feature {
+  display: flex;
+}
+.feature__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 270px;
+  border-radius: 4px;
+  margin-bottom: $interval-box;
+  background: #f5f4fa;
+}
+.feature__icon {
+  height: 70px;
+  width: 70px;
+}
+.feature__item {
+  &:not(:last-child) {
+    margin-right: $interval-box;
+  }
+}
+.feature__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+}
