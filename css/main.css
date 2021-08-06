@@ -287,8 +287,8 @@ ul {
 }
 
 ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 a {
@@ -300,30 +300,22 @@ button {
   font: inherit;
 }
 
-.invisible {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 .container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
   margin: 0 auto;
 }
 
 .header {
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #ececec;
-  height: 80px;
 }
 
-.header__container {
+.container--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,18 +336,26 @@ button {
   padding-top: 0;
 }
 
-.section--different {
+.section--background {
   background-color: #f5f4fa;
 }
 
 .section__title {
   margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-align: center;
   color: #212121;
+}
+
+.section__title--invisible {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .footer {
@@ -382,12 +382,12 @@ button {
 }
 
 .logo {
+  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
   color: #000000;
-  margin-right: 93px;
 }
 
 .logo__accent {
@@ -418,12 +418,12 @@ button {
 
 .nav__link {
   padding: 32px 0;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #212121;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__link:hover, .nav__link:focus {
@@ -505,17 +505,20 @@ button {
 }
 
 .hero__title {
+  margin-bottom: 30px;
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 30px;
 }
 
 .hero__button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -524,9 +527,6 @@ button {
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
-  padding: 10px 32px;
-  border-radius: 4px;
-  border: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -543,6 +543,10 @@ button {
 }
 
 .feature__box {
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,10 +556,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 120px;
-  width: 270px;
-  border-radius: 4px;
-  margin-bottom: 30px;
   background: #f5f4fa;
 }
 
@@ -569,11 +569,11 @@ button {
 }
 
 .feature__title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 10px;
   color: #212121;
 }
 
@@ -601,11 +601,11 @@ button {
   position: absolute;
   bottom: 0;
   left: 0;
+  text-align: center;
   width: 100%;
   padding: 27px;
   font-weight: 700;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
@@ -628,20 +628,20 @@ button {
 }
 
 .team__text {
+  padding: 30px 0;
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.19;
-  padding: 30px 0;
   background-color: #ffffff;
-  text-align: center;
-  border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   fill: #afb1b8;
 }
 
 .team__name {
-  font-weight: 500;
   margin-bottom: 10px;
+  font-weight: 500;
   color: #212121;
 }
 
@@ -649,7 +649,7 @@ button {
   margin-bottom: 16px;
 }
 
-.social-networks__list {
+.social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,6 +663,8 @@ button {
 }
 
 .social-networks__link {
+  height: 44px;
+  width: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,11 +674,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 44px;
-  width: 44px;
+  text-align: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  text-align: center;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -720,17 +720,17 @@ button {
 }
 
 .client__link {
+  width: 170px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
-  height: 92px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -782,32 +782,32 @@ button {
 }
 
 .mail__text {
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: 700;
   line-height: 1.14;
-  margin-bottom: 20px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .mail__edit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 358px;
   height: 50px;
-  background: none;
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   font-size: 16px;
   letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -843,19 +843,19 @@ button {
 }
 
 .mail__button {
+  height: 50px;
+  padding-left: 29px;
+  padding-right: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
-  padding-left: 29px;
-  padding-right: 28px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -875,10 +875,10 @@ button {
 }
 
 .mail__icon {
+  margin-left: 10px;
   fill: inherit;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 10px;
 }
 
 .mail__button:focus .mail__icon,
@@ -910,10 +910,10 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 528px;
   padding: 40px;
+  border-radius: 4px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
 }
 
 .backdrop.is-hidden .modal {
@@ -927,20 +927,20 @@ button {
 }
 
 .modal__close {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
   cursor: pointer;
 }
 
@@ -976,10 +976,10 @@ button {
 }
 
 .modal__text {
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
 }
 
 .modal__blok {
@@ -1024,9 +1024,9 @@ button {
   height: 120px;
   padding: 12px 16px;
   margin-top: 4px;
-  resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: none;
   cursor: pointer;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1099,15 +1099,23 @@ button {
   cursor: pointer;
 }
 
+.check {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .modal__link {
   text-decoration: underline;
   color: #2196f3;
 }
 
 .check__icon {
+  margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 2px;
-  margin-right: 8px;
   font: inherit;
 }
 
@@ -1122,19 +1130,19 @@ button {
 }
 
 .modal__submit {
-  background: #188ce8;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
   padding: 10px 55px;
   margin-top: 30px;
+  border-radius: 4px;
+  border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: #ffffff;
+  background: #188ce8;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filter {
@@ -1152,17 +1160,17 @@ button {
 }
 
 .filter__button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62em;
+  letter-spacing: 0.03em;
   color: #212121;
   background-color: #f5f4fa;
   cursor: pointer;
-  padding: 6px 22px;
-  border-radius: 4px;
-  letter-spacing: 0.03em;
-  border: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1221,6 +1229,13 @@ button {
 
 .works__animation {
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  padding: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1230,17 +1245,10 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  padding: 24px;
   background: rgba(33, 150, 243, 0.9);
 }
 
@@ -1253,22 +1261,22 @@ button {
 .works__description {
   font-size: 18px;
   line-height: 1.56;
-  color: #ffffff;
   letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .works__text {
-  border: 1px solid #eeeeee;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .works__title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
   letter-spacing: 0.06em;
   color: #212121;
-  margin-bottom: 4px;
 }
 
 .works__type {

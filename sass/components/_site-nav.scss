@@ -7,12 +7,14 @@
 }
 .nav__link {
   padding: 32px 0;
-  transition: color $function-time;
 
-  color: $title-text-color;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
+
+  color: $title-text-color;
+  transition: color $function-time;
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -20,6 +22,7 @@
 }
 .nav__link--active {
   position: relative;
+
   color: $accent-color;
 
   &::after {

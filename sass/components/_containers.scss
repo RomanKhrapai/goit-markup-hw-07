@@ -1,16 +1,18 @@
 .container {
+  width: 1200px;
+
   padding-left: 15px;
   padding-right: 15px;
-
-  width: 1200px;
   margin: 0 auto;
 }
 .header {
-  display: flex;
-  border-bottom: 1px solid #ececec;
   height: 80px;
+
+  display: flex;
+
+  border-bottom: 1px solid #ececec;
 }
-.header__container {
+.container--flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,18 +24,27 @@
 .section--no-top {
   padding-top: 0;
 }
-.section--different {
+.section--background {
   background-color: #f5f4fa;
 }
 .section__title {
   margin-bottom: 50px;
+
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-align: center;
 
   color: $title-text-color;
+}
+.section__title--invisible {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .footer {
   background-color: #2f303a;

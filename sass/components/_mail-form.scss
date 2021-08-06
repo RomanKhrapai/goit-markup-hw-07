@@ -2,30 +2,34 @@
   display: flex;
 }
 .mail__text {
+  margin-bottom: 20px;
+
   display: flex;
+
   font-weight: 700;
   line-height: 1.14;
-  margin-bottom: 20px;
   text-transform: uppercase;
 
   color: $fon-color;
 }
 .mail__edit {
-  display: flex;
   width: 358px;
   height: 50px;
-  background: none;
+
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 12px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+
+  background: none;
+
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   font-size: 16px;
-
   letter-spacing: 0.03em;
 
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
   transition: border-color $function-time;
 
@@ -34,6 +38,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+
   &:hover,
   &:focus-visible {
     border-color: $accent-color;
@@ -42,15 +47,17 @@
 }
 
 .mail__button {
-  display: flex;
-  align-items: center;
   height: 50px;
+
   padding-left: 29px;
   padding-right: 28px;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+
   border-radius: 4px;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-family: inherit;
   font-weight: 700;
@@ -71,9 +78,11 @@
   }
 }
 .mail__icon {
+  margin-left: 10px;
+
   fill: inherit;
   transition: fill $function-time;
-  margin-left: 10px;
+
   .mail__button:focus &,
   .mail__button:hover & {
     fill: $accent-color;

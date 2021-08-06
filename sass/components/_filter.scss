@@ -9,18 +9,22 @@
   }
 }
 .filter__button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62em;
+  letter-spacing: 0.03em;
+
   color: $title-text-color;
   background-color: #f5f4fa;
   cursor: pointer;
-  padding: 6px 22px;
-  border-radius: 4px;
-  letter-spacing: 0.03em;
-  border: none;
+
   transition: color$function-time, background-color $function-time;
+
   &:focus,
   &:hover {
     color: $fon-color;

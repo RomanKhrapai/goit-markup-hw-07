@@ -6,11 +6,13 @@
 .works__img {
   width: 100%;
   height: auto;
+
   display: block;
 }
 .works__item {
   margin-left: $interval-box;
   margin-top: $interval-box;
+
   &:nth-child(3n + 1) {
     margin-left: 0;
   }
@@ -21,6 +23,7 @@
 .works__link {
   display: block;
   transition: box-shadow $function-time;
+
   &:focus,
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -34,17 +37,23 @@
 }
 .works__animation {
   position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+
+  padding: 24px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(100%);
+
   transition: transform $function-time;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  padding: 24px;
+
   background: rgba(33, 150, 243, 0.9);
+
   .works__link:hover &,
   .works__link:focus & {
     transform: translateY(0%);
@@ -54,25 +63,29 @@
 .works__description {
   font-size: 18px;
   line-height: 1.56;
-  color: $fon-color;
   letter-spacing: 0.03em;
+
+  color: $fon-color;
 }
 .works__text {
-  border: 1px solid #eeeeee;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .works__title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
   letter-spacing: 0.06em;
+
   color: $title-text-color;
-  margin-bottom: 4px;
 }
 .works__type {
   font-size: 16px;
   line-height: 1.87em;
   letter-spacing: 0.03em;
+
   color: inherit;
 }

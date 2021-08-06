@@ -3,6 +3,7 @@
 }
 .career__item {
   position: relative;
+
   &:not(:last-child) {
     margin-right: $interval-box;
   }
@@ -17,11 +18,14 @@
   position: absolute;
   bottom: 0;
   left: 0;
+
+  text-align: center;
   width: 100%;
+
   padding: 27px;
+
   font-weight: 700;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
 
   color: $fon-color;
